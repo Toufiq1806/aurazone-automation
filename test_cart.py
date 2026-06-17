@@ -9,12 +9,12 @@ def test_add_to_cart_updates_cart_count():
 
         page.goto(BASE_URL)
 
-        # Click on the first product title to open product detail page
+       
         first_product_title = page.locator("css=h3[title]").first
         first_product_title.click()
         page.wait_for_load_state("networkidle")
 
-        # After clicking, check that the page title is not empty
+       
         title = page.title()
         assert title is not None and len(title) > 0
 
