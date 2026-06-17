@@ -9,8 +9,7 @@ def test_filter_applied_and_results_appear():
 
         page.goto(BASE_URL)
 
-        # For now, just check that the page loads successfully
-        # We will later add filter logic when we know the real selectors
+       
         assert page.title() == "Aurazone - Premium Footwear"
 
         browser.close()
