@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 
 BASE_URL = "https://test.aurazone.shop/"
 
-def test_product_detail_page_opens_after_click():
+def test_product_title():
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
         page = browser.new_page()
